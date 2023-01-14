@@ -44,9 +44,6 @@
     width: 100px;
 }
 
-.about, .support{
-    display: none;
-}
 
 /*Main responsive*/
 @media only screen and (max-width: 870px){
