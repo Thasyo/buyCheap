@@ -1,0 +1,119 @@
+/* Apresentation */
+.apresentation{
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    margin: 50px 0px;
+}
+
+.apresentation .description-apresentation{
+    color: #FF7337;
+    font-size: 2.3em;
+    font-weight: 800;
+    text-shadow: 0px 0px 5px #ff73378e;
+    letter-spacing: 2px;
+    padding: 50px 0px;
+}
+
+.apresentation .description-apresentation p{
+    display: flex;
+    flex-direction: column;
+}
+
+.apresentation .description-apresentation p span{
+    margin: 5px 0px;
+}
+
+.img-apresentation{
+    display: flex;
+    flex-direction: column;
+}
+
+.imgs01 img:nth-child(2){
+    margin-left: 50px;
+}
+
+
+.imgs02 img:nth-child(2){
+    margin-left: 50px;
+}
+
+.img-apresentation img{
+    width: 100px;
+}
+
+.about, .support{
+    display: none;
+}
+
+/*Main responsive*/
+@media only screen and (max-width: 870px){
+    .apresentation{
+        margin: 10px 0px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .apresentation .description-apresentation{
+        border-bottom: dashed 2px #ff733795;
+    }
+
+    .img-apresentation{
+        margin-top: 25px;
+    }
+
+    .imgs01 img:nth-child(2){
+        margin-left: 150px;
+    }
+    
+    
+    .imgs02 img:nth-child(2){
+        margin-left: 150px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .img-apresentation{
+        display: none;
+    }
+
+    .apresentation .description-apresentation{
+        border: none;
+    }
+
+    .apresentation{
+        margin: 10px 0px;
+    }
+
+    .apresentation .description-apresentation{
+        padding: 20px 0px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .apresentation .description-apresentation{
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .apresentation .description-apresentation{
+        font-size: 1.7em;
+    }
+}
+
+@media only screen and (max-width: 400px){
+
+    .apresentation .description-apresentation{
+        font-size: 1.4em;
+    }
+}
+
+@media only screen and (max-width: 350px){
+
+    .apresentation .description-apresentation{
+        font-size: 1.2em;
+    }
+}

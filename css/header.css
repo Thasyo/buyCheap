@@ -1,3 +1,5 @@
+/*general configurations*/
+
 *{
     margin: 0;
     padding: 0;
@@ -5,12 +7,11 @@
     font-family: arial;
 }
 
-main,footer{
+footer{
     display: none;
 }
 
 header{
-    position: fixed;
     width: 100vw;
     height: 12vh;
     background-color: #FF7337;
