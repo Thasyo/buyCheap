@@ -1,0 +1,104 @@
+.support{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.support h1{
+    color: #FF7337;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    border-bottom: solid 3px #FF7337;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.support h1 img{
+    width: 30px;
+    margin-left: 5px;
+}
+
+.support .card-form{
+    background-color: #FF7337;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #FF7337;
+    color: #fff;
+}
+
+.card-form form{
+    width: 100%;
+    height: 100%;
+}
+
+.card-form form .container-title-form{
+    width: 100%;
+    font-size: 1.1em;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 0px 0px 2px #ffffffb4;
+    border-bottom: solid 3px #fff;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.card-form form .container-inputs .inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs label{
+    font-size: 14px;
+    font-weight: 800;
+    margin: 10px 0px 5px 0px;
+}
+
+.inputs input, #message{
+    border: none;
+    border-radius: 5px;
+    padding: 3px;   
+}
+
+.inputs input::placeholder, #message::placeholder{
+    color: #a6a6a6;
+    padding: 5px 2px;
+}
+
+#message::placeholder{
+    padding-top: 1px 0px;
+}
+
+.inputs input, #message:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+
+#btn-form{
+    margin: 20px 0px 15px;
+    background-color: #fff;
+    color: #FF7337;
+    font-weight: 800;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+#btn-form:hover{
+    transform: scale(1.02);
+    transition: 0.2s;
+    box-shadow: 0px 0px 3px #fff;
+    cursor: pointer;
+}
