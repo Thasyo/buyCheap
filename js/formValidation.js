@@ -6,10 +6,16 @@ const emailRegex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]/i;
 
 
 form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    nameValidation();
-    emailValidation();
-    messageValidation();
+    if(fields[0].value.length && fields[1].value.length && fields[2].value.length !== 0){
+        nameValidation();
+        emailValidation();
+        messageValidation();
+    }else{
+        e.preventDefault();
+        nameValidation();
+        emailValidation();
+        messageValidation();
+    }
 })
 
 
@@ -43,7 +49,7 @@ const emailValidation = () => {
 }
 
 const messageValidation = () => {
-    if(fields[2].value.length <= 20){
+    if(fields[2].value.length === 0){
         setError(2);
     } else {
         removeError(2);
