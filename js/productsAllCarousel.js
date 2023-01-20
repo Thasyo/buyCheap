@@ -1,3 +1,4 @@
+//papelariaCasaDecoração
 $( () => {
     $(".carousel-decoration").slick({
         infinite: true,
@@ -24,6 +25,8 @@ $( () => {
     });
 })
 
+
+//papelariaCarrossel
 $( () => {
     $(".carousel-stationarystore").slick({
         infinite: true,
