@@ -17,6 +17,8 @@
     font-size: 2em;
     font-weight: 900;
     margin: 15px 60px;
+    display: flex;
+    flex-direction: column;
 }
 
 .title-carousel h1 a{
@@ -41,7 +43,7 @@
     border-radius: 10px;
     box-shadow: 0px 0px 10px #ff7337ba;
     padding: 15px;
-    margin: 5px 10px;
+    margin: 15px 10px 5px 10px;
     transform: scale(0.6);
     transition: .2s;
     -webkit-transition: .2s;
@@ -50,7 +52,7 @@
 }
 
 .card-product.slick-center{
-    transform: scale(0.8);
+    transform: scale(1);
 }
 
 .card-product .img-product{
@@ -69,8 +71,8 @@
 
 .name-product{
     color: #000000;
-    font-size: 1.6em;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 700;
     margin: 5px;
     width: 70%;
     text-align: center;
@@ -80,10 +82,10 @@
     text-decoration: none;
     color: #fff;
     font-weight: 700;
-    font-size: 1.4em;
+    font-size: 18px;
     background-color: #FF7337;
     border-radius: 10px;
-    padding: 15px;
+    padding: 10px;
     margin: 20px;
 
 }
@@ -91,11 +93,14 @@
 .card-product .content-product a:hover{
     transform: scale(1.05);
     transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -o-transition: .2s;
     box-shadow: 0px 0px 15px #FF7337;
 }
 
 .img-product img{
-    width: 300px;
+    width: 200px;
     margin: 10px;
     border-radius: 10px;
 }
@@ -161,6 +166,107 @@
     cursor: pointer;
 }
 
+/*setas do slide tech*/
+
+.prev-arrow-tech{
+    margin-right: 20px;
+    outline: 0 0 0 0;
+    margin-bottom: 10px;
+}
+
+.prev-arrow-tech:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.next-arrow-tech{
+    margin-left: 20px;
+    outline: 0 0 0 0;
+    margin-bottom: 10px;
+
+}
+
+.next-arrow-tech:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1280px){
+    .title-carousel h1{
+        font-size: 1.8em;
+    }
+    
+    .card-product .content-product a{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        padding: 10px 0px;
+        letter-spacing: 1px;
+        font-size: 14px;
+        font-weight: 800;
+    }  
+
+    .img-product img{
+        width: 200px;
+        margin: -5px -5px 10px -5px;
+    }
+
+    .name-product{
+        font-size: 18px;
+        width: 100%;
+    }
+}
+
+@media only screen and (width: 1024px){
+    .img-product img{
+        width: 250px;
+    }
+
+    .name-product{
+        font-size: 20px;
+    }
+
+    .card-product .content-product a{
+        width: 90%;
+    }
+}
+
+@media only screen and (width: 912px){
+    .card-product .content-product a{
+        width: 90%;
+    }
+}
+
+@media only screen and (width: 768px){
+    .title-carousel h1{
+        font-size: 1.6em;
+    }
+    
+    .img-product img{
+        padding: 5px;
+    }
+
+    .name-product{
+        font-size: 18px;
+    }
+
+    .card-product .content-product a{
+        width: 100%;
+        margin: 5px;
+        padding: 15px 0px;
+        font-size: 13px;
+        letter-spacing: none;
+    }
+}
+
+@media only screen and (width: 820px){
+    .title-carousel h1{
+        font-size: 1.6em;
+    }
+}
+
 @media only screen and (max-width: 550px){
     .container-carousel{
         border-top: solid 1px #FF7337;
@@ -168,13 +274,15 @@
     }
 
     .card-product{
-        margin: 0px 10px;
+        margin: 10px 10px;
     }
 
     .title-carousel h1{
         font-size: 20px;
         text-align: center;
-        margin: 5px 50px;
+        margin: 10px 30px;
+        display: flex;
+        flex-direction: column;
     }
 
     .title-carousel h1 a{
@@ -187,11 +295,16 @@
     }
 
     .img-product img{
-        width: 200px;
+        width: 250px;
     }
 
     .name-product{
-        font-size: 1.3em;
+        font-size: 18px;
+        width: 80%;
+    }
+
+    .card-product .content-product a{
+        width: 200px;
     }
 }
 
@@ -205,7 +318,7 @@
 
     .slick-track{
         height: 100%;
-        margin: 5px 0px;
+        margin: 20px 0px 0px 10px;
     }
 
 }

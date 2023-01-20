@@ -2,7 +2,7 @@
 $( () => {
     $(".carousel-decoration").slick({
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 5,
         speed: 500,
         slidesToScroll: 1,
         centerMode: true,
@@ -12,12 +12,13 @@ $( () => {
             {
               breakpoint: 1025,
               settings: {
-                slidesToShow: 1,
+                slidesToShow: 3,
               }
             },
             {
               breakpoint: 600,
               settings: {
+                slidesToShow: 1,
                 variableWidth: true,
               }
             }
@@ -30,7 +31,7 @@ $( () => {
 $( () => {
     $(".carousel-stationarystore").slick({
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 5,
         speed: 500,
         slidesToScroll: 1,
         centerMode: true,
@@ -40,15 +41,45 @@ $( () => {
             {
               breakpoint: 1025,
               settings: {
-                slidesToShow: 1,
+                slidesToShow: 3,
               }
             },
             {
               breakpoint: 600,
               settings: {
+                slidesToShow: 1,
                 variableWidth: true,
               }
             }
           ]
     });
+})
+
+
+//techCarrossel
+$( () => {
+  $(".carousel-tech").slick({
+      infinite: true,
+      slidesToShow: 5,
+      speed: 500,
+      slidesToScroll: 1,
+      centerMode: true,
+      prevArrow: $(".prev-arrow-tech"),
+      nextArrow: $(".next-arrow-tech"),
+      responsive: [
+          {
+            breakpoint: 1025,
+            settings: {
+              slidesToShow: 3,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              variableWidth: true,
+            }
+          }
+        ]
+  });
 })
