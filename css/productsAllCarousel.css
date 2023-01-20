@@ -1,0 +1,211 @@
+.general-container{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-carousel{
+    margin: 20px 0px;
+    border-radius: 10px;
+    border-top: solid 1px #FF7337;
+    border-bottom: solid 1px #FF7337;
+}
+
+.title-carousel h1{
+    color: #FF7337;
+    text-align: center;
+    font-size: 2em;
+    font-weight: 900;
+    margin: 15px 60px;
+}
+
+.title-carousel h1 a{
+    text-decoration: underline #ff7337ba 2px;
+}
+
+.title-carousel h1 a small{
+    font-size: 20px;
+    color: #ff7337d5;
+}
+
+.title-carousel h1 a small:hover{
+    color: #ff73376e;
+    text-decoration: underline;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -o-transition: .5s;
+}
+
+.card-product{
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #ff7337ba;
+    padding: 15px;
+    margin: 5px 15px;
+    transform: scale(0.6);
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -o-transition: .3s;
+}
+
+.card-product.slick-center{
+    transform: scale(0.8);
+}
+
+.card-product .img-product{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-product .content-product{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-product{
+    color: #FF7337;
+    font-size: 2em;
+    margin: 5px;
+    width: 70%;
+    text-align: center;
+}
+
+.card-product .content-product a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.4em;
+    background-color: #FF7337;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px;
+
+}
+
+.card-product .content-product a:hover{
+    transform: scale(1.05);
+    transition: .2s;
+    box-shadow: 0px 0px 15px #FF7337;
+}
+
+.img-product img{
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.arrows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FF7337;
+    font-size: 3em;
+}
+
+/*setas do slide decoration*/
+
+.prev-arrow-decoration{
+    margin-right: 20px;
+    outline: 0 0 0 0;
+    margin-bottom: 10px;    
+}
+
+.prev-arrow-decoration:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.next-arrow-decoration{
+    margin-left: 20px;
+    outline: 0 0 0 0;
+    margin-bottom: 10px;
+}
+
+.next-arrow-decoration:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    cursor: pointer;
+}
+
+/*setas do slide stationarystore*/
+
+.prev-arrow-stationarystore{
+    margin-right: 20px;
+    outline: 0 0 0 0;
+    margin-bottom: 10px;
+}
+
+.prev-arrow-stationarystore:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.next-arrow-stationarystore{
+    margin-left: 20px;
+    outline: 0 0 0 0;
+    margin-bottom: 10px;
+
+}
+
+.next-arrow-stationarystore:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    cursor: pointer;
+}
+
+/* @media only screen and (max-width: ) */
+
+@media only screen and (max-width: 550px){
+    .container-carousel{
+        border-top: solid 1px #FF7337;
+        border-bottom: solid 1px #FF7337;
+    }
+
+    .arrows{
+        display: none;
+    }
+
+    .card-product{
+        margin: 0px 10px;
+    }
+
+    .title-carousel h1{
+        font-size: 20px;
+        text-align: center;
+        margin: 5px 50px;
+    }
+
+    .title-carousel h1 a{
+        text-decoration: underline #ff7337a4;
+        color: #ff9668aa;
+    }
+
+    .title-carousel h1 a small{
+        font-size: 14px;
+    }
+
+    .name-product{
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (width: 280px){
+    .title-carousel h1{
+        font-size: 20px;
+        text-align: center;
+        margin: 15px 15px 0px 15px;
+        text-shadow: 0px 3px 5px #ff73375a;
+    }
+
+    .container-carousel{
+        border: none;
+    }
+
+}

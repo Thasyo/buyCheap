@@ -61,6 +61,15 @@ footer{
     text-align: center; 
 }
 
+.links-social-media a img{
+    margin: 10px 20px;
+}
+
+.links-social-media a img:hover{
+    transform: scale(1.1);
+    transition: .3s;
+}
+
 .copyright img{
     width: 200px;
     margin: 50px 0px 0px 40px;
@@ -102,5 +111,9 @@ footer{
 
     .title-footer-social-media{
         font-size: 1.1em;
+    }
+
+    .links-social-media a img{
+        margin: 10px;
     }
 }

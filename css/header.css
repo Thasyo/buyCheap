@@ -41,7 +41,6 @@ header .nav-bar a{
     margin: 10px 5px;
     padding: 5px;
     text-decoration: none;
-
 }
 
 header .nav-bar a:hover{
@@ -178,6 +177,7 @@ header .nav-bar a:hover{
         position: fixed;
         top: 15;
         right: 0;
+        z-index: 1;
     }
 
     
@@ -191,6 +191,7 @@ header .nav-bar a:hover{
         display: flex;
         flex-direction: column;
         transition: 0.3s;
+        z-index: 1;
     }
 
     .nav-bar.ativo{
