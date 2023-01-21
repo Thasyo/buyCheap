@@ -32,7 +32,7 @@
 
 .title-carousel h1 a small:hover{
     color: #ff73376e;
-    text-decoration: underline;
+    text-decoration: none;
     transition: .2s;
     -webkit-transition: .2s;
     -moz-transition: .2s;
@@ -188,6 +188,60 @@
 }
 
 .next-arrow-tech:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    cursor: pointer;
+}
+
+/*setas do slide toys*/
+
+.prev-arrow-toys{
+    margin-right: 20px;
+    outline: 0 0 0 0;
+    margin-bottom: 10px;
+}
+
+.prev-arrow-toys:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.next-arrow-toys{
+    margin-left: 20px;
+    outline: 0 0 0 0;
+    margin-bottom: 10px;
+
+}
+
+.next-arrow-toys:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    cursor: pointer;
+}
+
+/*setas do slide accessories*/
+
+.prev-arrow-accessories{
+    margin-right: 20px;
+    outline: 0 0 0 0;
+    margin-bottom: 10px;
+}
+
+.prev-arrow-accessories:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.next-arrow-accessories{
+    margin-left: 20px;
+    outline: 0 0 0 0;
+    margin-bottom: 10px;
+
+}
+
+.next-arrow-accessories:hover{
     transform: scale(1.1);
     transition: .2s;
     cursor: pointer;
