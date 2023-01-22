@@ -105,6 +105,10 @@
     border-radius: 10px;
 }
 
+.carousel-books .card-product .img-product img{
+    width: 200px;
+}
+
 .arrows{
     display: flex;
     justify-content: center;
@@ -246,6 +250,61 @@
     transition: .2s;
     cursor: pointer;
 }
+
+/*setas do slide books*/
+
+.prev-arrow-books{
+    margin-right: 20px;
+    outline: 0 0 0 0;
+    margin-bottom: 10px;
+}
+
+.prev-arrow-books:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.next-arrow-books{
+    margin-left: 20px;
+    outline: 0 0 0 0;
+    margin-bottom: 10px;
+
+}
+
+.next-arrow-books:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    cursor: pointer;
+}
+
+/*setas do slide clothes*/
+
+.prev-arrow-clothes{
+    margin-right: 20px;
+    outline: 0 0 0 0;
+    margin-bottom: 10px;
+}
+
+.prev-arrow-clothes:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.next-arrow-clothes{
+    margin-left: 20px;
+    outline: 0 0 0 0;
+    margin-bottom: 10px;
+
+}
+
+.next-arrow-clothes:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    cursor: pointer;
+}
+
 
 @media only screen and (max-width: 1280px){
     .title-carousel h1{
