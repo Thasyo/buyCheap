@@ -168,34 +168,6 @@ $( () => {
   });
 })
 
-//BooksCarousel
-$( () => {
-  $(".carousel-books").slick({
-      infinite: true,
-      slidesToShow: 5,
-      speed: 500,
-      slidesToScroll: 1,
-      centerMode: true,
-      prevArrow: $(".prev-arrow-books"),
-      nextArrow: $(".next-arrow-books"),
-      responsive: [
-          {
-            breakpoint: 1025,
-            settings: {
-              slidesToShow: 3,
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 1,
-              variableWidth: true,
-            }
-          }
-        ]
-  });
-})
-
 //ClothesCarousel
 $( () => {
   $(".carousel-clothes").slick({
