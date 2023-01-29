@@ -78,10 +78,10 @@
 
 .name-product{
     color: #000000;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
     margin: 5px;
-    width: 70%;
+    width: 80%;
     text-align: center;
 }
 
@@ -146,5 +146,81 @@
     transform: scale(1.1);
     transition: .2s;
     cursor: pointer;
+}
+
+
+/*Responsividade*/
+
+@media only screen and (max-width: 1281px) {
+
+    .card-product{
+        padding: 0px 15px;
+    }
+
+    .card-product .content-product a{
+        padding: 15px;
+        width: 100%;
+    }
+
+    .name-product{
+        width: 100%;
+        font-size: 16px;
+    }
+    
+}
+
+@media only screen and (max-width: 1025px){
+
+    .card-product .content-product a{
+        padding: 15px;
+        width: 80%;
+    }
+
+    .name-product{
+        width: 80%;
+    }
+
+}
+
+@media only screen and (max-width: 913px){
+    .card-product .content-product a{
+
+        width: 100%;
+
+    }
+}
+
+@media only screen and (max-width: 769px){
+    .name-product{
+        width: 100%;
+    }
+
+    .card-product .content-product a{
+        font-size: 12px;
+    }
+
+    .img-product img{
+        width: 180px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .category{
+        font-size: 1.5em;
+    }
+
+    .card-product{
+        width: 200px;
+    }
+
+    .name-product{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .card-product .content-product a{
+        width: 100%;
+        font-size: 12px;
+    }
 }
 
