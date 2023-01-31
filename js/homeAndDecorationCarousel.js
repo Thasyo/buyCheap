@@ -46,7 +46,7 @@ const loadCardProductKitchen = (productKitchenData, carouselKitchen) => {
   
   };
   
-  loadCardProductKitchen(productKitchenData, carouselKitchen);
+loadCardProductKitchen(productKitchenData, carouselKitchen);
 
 $( () => {
     $("#carousel-kitchen").slick({
@@ -76,9 +76,81 @@ $( () => {
 })
 
 
-
+//creating room cards home and decoration.
 //carouselRoom
+const productRoomData = [
+  {'src': '../img/roomHomeAndDecoration/miniUmidificadorEAromatizador.png', 'name': 'Umidificador e Aromatizador de Ar', 'link': 'https://shope.ee/fs37JbeQj'},
+  {'src': '../img/roomHomeAndDecoration/kit40PlacasPVC.png', 'name': 'KIT 40 Placas PVC', 'link': 'https://shope.ee/cMKJL81R'},
+  {'src': '../img/roomHomeAndDecoration/03LedsEmUmaLampadaSemFio.png', 'name': '03 Leds sem fio para Lâmpada', 'link': 'https://shope.ee/1AoJijwQHx'},
+  {'src': '../img/roomHomeAndDecoration/tapeteFelpudo.png', 'name': 'Tapete Felpudo', 'link': 'https://shope.ee/3fVIJN3dA6'},
+  {'src': '../img/roomHomeAndDecoration/cortinaRoma.png', 'name': 'Cortina Roma', 'link': 'https://shope.ee/6KWPsg5eQS'},
+  {'src': '../img/roomHomeAndDecoration/rackSuspensoBranco.png', 'name': 'Rack Suspenso Branco', 'link': 'https://shope.ee/89y44Ho8zQ'},
+  {'src': '../img/roomHomeAndDecoration/kitMesaLateralECantoDeSofa.png', 'name': 'KIT Mesa Lateral', 'link': 'https://shope.ee/89y44QXEye'},
+  {'src': '../img/roomHomeAndDecoration/quadroDecorativoPersonalizado.png', 'name': 'Quadro Decorativo Personalizado', 'link': 'https://shope.ee/5KdshNHiJo'},
+  {'src': '../img/roomHomeAndDecoration/roloAdesivoTiraPelos.png', 'name': 'Rolo Adesivo Tira Pelos', 'link': 'https://shope.ee/6KWPtk0mbD'},
+  {'src': '../img/roomHomeAndDecoration/mesaDeCentroSalaClassicOval.jpg', 'name': 'Mesa de Centro Para Sala Estilo Oval', 'link': 'https://www.amazon.com.br/Centro-Classic-Madeira-Maci%C3%A7a-Amendoa/dp/B09RX1PNR2?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=29M6G4LORCOFG&keywords=sala&qid=1675133923&sprefix=sala%2Caps%2C235&sr=8-18&ufe=app_do%3Aamzn1.fos.6121c6c4-c969-43ae-92f7-cc248fc6181d&linkCode=ll1&tag=thasyo0a-20&linkId=0e9b6fd77ab79109f65818b1ca13f826&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/roomHomeAndDecoration/sofa4lugares.jpg', 'name': 'Sofá 4 Lugares', 'link': 'https://www.amazon.com.br/Sof%C3%A1-Lugares-Retr%C3%A1til-Reclin%C3%A1vel-Fran%C3%A7a/dp/B0BMW7KGRN?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1IWGJ5SUBFZS5&keywords=sof%C3%A1&qid=1675134131&sprefix=sof%C3%A1%2Caps%2C168&sr=8-5&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147&linkCode=ll1&tag=thasyo0a-20&linkId=262e69ffcacd56cd5fb9c2aa0c1bd477&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/roomHomeAndDecoration/poltronaDecorativa.jpg', 'name': 'Poltrona Decorativa', 'link': 'https://www.amazon.com.br/Poltrona-Decorativa-Marrom-quarto-escrit%C3%B3rio/dp/B086HN6YY8?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=13T1BL43LPC5P&keywords=poltrona&qid=1675134329&sprefix=poltron%2Caps%2C287&sr=8-5&ufe=app_do%3Aamzn1.fos.6a09f7ec-d911-4889-ad70-de8dd83c8a74&linkCode=ll1&tag=thasyo0a-20&linkId=3dde9d48d27db25a09f4c6fc52750ec0&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/roomHomeAndDecoration/poltronaElevation.jpg', 'name': 'Poltrona Elevation', 'link': 'https://www.amazon.com.br/Poltrona-Papai-elevation-Preto-Wall/dp/B09NCBNXJV?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=13T1BL43LPC5P&keywords=poltrona&qid=1675134409&sprefix=poltron%2Caps%2C287&sr=8-1-spons&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyMEJTTEFHVVlUMEZDJmVuY3J5cHRlZElkPUEwNDc5MTYzM0JOWDZDWlRKTkZMRyZlbmNyeXB0ZWRBZElkPUEwNjA1NDUwMk1HNFE2WTc1R1hUMiZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU%3D&linkCode=ll1&tag=thasyo0a-20&linkId=6cb4677b59997c59bde3b4f2dd825d46&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/roomHomeAndDecoration/puffGigante.jpg', 'name': 'Puff Gigante', 'link': 'https://www.amazon.com.br/Gigante-Redondo-Enchimento-Suede-1-40m/dp/B092SY32M7?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1BUL12QR4BZGU&keywords=puff&qid=1675134499&sprefix=puf%2Caps%2C246&sr=8-11&ufe=app_do%3Aamzn1.fos.6121c6c4-c969-43ae-92f7-cc248fc6181d&linkCode=ll1&tag=thasyo0a-20&linkId=ca862e7c43ba34353ef4a4163d2f63fb&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/roomHomeAndDecoration/folhasCordaoGuirlandaVerde.png', 'name': 'Folhas Guirlanda Verde', 'link': 'https://shope.ee/5pa9Jkb41Q'},
+  {'src': '../img/roomHomeAndDecoration/kit2PuffThorRedondo.jpg', 'name': 'KIT 02 Puff Thor Redondo', 'link': 'https://www.amazon.com.br/Puff-Thor-Redondo-Luxo-Veludo/dp/B09SQD7RLQ?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1BUL12QR4BZGU&keywords=puff&qid=1675134676&sprefix=puf%2Caps%2C246&sr=8-9&ufe=app_do%3Aamzn1.fos.6a09f7ec-d911-4889-ad70-de8dd83c8a74&linkCode=ll1&tag=thasyo0a-20&linkId=81b64c8ec18eeb050d5fc7910ae5ea8d&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/roomHomeAndDecoration/painelParaTvAte32Polegadas.jpg', 'name': 'Painel para TV', 'link': 'https://www.amazon.com.br/Painel-Sala-Para-Polegadas-Turim/dp/B0B2F2Q1WR?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=XD35M15O2VD8&keywords=sala+de+estar&qid=1675134816&sprefix=sala+de+estar%2Caps%2C156&sr=8-50&ufe=app_do%3Aamzn1.fos.6121c6c4-c969-43ae-92f7-cc248fc6181d&linkCode=ll1&tag=thasyo0a-20&linkId=8431eb9ff038c20cf562e2903997ae61&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/roomHomeAndDecoration/aparadorBuffet3Portas.jpg', 'name': 'Aparador Buffet 3 Portas', 'link': 'https://www.amazon.com.br/Aparador-Buffet-Portas-M%C3%B3veis-Germai/dp/B099R467SW?crid=2NGHROHNR3B5H&keywords=moveis+sala+de+estar&qid=1675134968&sprefix=sala+de+estar%2Caps%2C350&sr=8-8&ufe=app_do%3Aamzn1.fos.fcd6d665-32ba-4479-9f21-b774e276a678&linkCode=ll1&tag=thasyo0a-20&linkId=d91975f3debf1132c1b97de6ed589c97&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/roomHomeAndDecoration/bandejaEsteiraParaSofa.png', 'name': 'Bandeja Esteira para Sofá', 'link': 'https://shope.ee/3KsoLjVphQ'},
+  {'src': '../img/roomHomeAndDecoration/miniUmidificadorEggPortatil.png', 'name': 'Mini Umidificador Egg Potátil', 'link': 'https://shope.ee/1L7jyLfBIn'},
+];
 
+const carouselRoom = document.querySelector("#carousel-room");
+
+const loadCardProductRoom = (productRoomData, carouselRoom) => {
+
+  productRoomData.forEach((cardproduct) => {
+    
+    carouselRoom.innerHTML += `     
+      <div class="card-product">
+          <div class="img-product">
+              <img src="${cardproduct.src}" class="image">
+          </div>
+          <div class="content-product">
+              <h3 class="name-product">${cardproduct.name}</h3>
+              <a href="${cardproduct.link}" target="_blank">Detalhes do Produto</a>
+          </div>
+      </div>
+    `;
+    
+  })  
+
+};
+
+loadCardProductRoom(productRoomData, carouselRoom);
+
+$( () => {
+  $("#carousel-room").slick({
+      infinite: true,
+      slidesToShow: 5,
+      speed: 500,
+      slidesToScroll: 1,
+      centerMode: true,
+      prevArrow: $(".prev-arrow-room"),
+      nextArrow: $(".next-arrow-room"),
+      responsive: [
+          {
+            breakpoint: 1025,
+            settings: {
+              slidesToShow: 3,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              variableWidth: true,
+            }
+          }
+        ]
+  });
+})
 
 
 //carouselBedroom

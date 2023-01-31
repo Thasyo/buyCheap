@@ -124,6 +124,8 @@
     font-size: 3em;
 }
 
+/*arrows kitchen*/
+
 .prev-arrow-kitchen{
     margin-right: 20px;
     outline: 0 0 0 0;
@@ -147,6 +149,33 @@
     transition: .2s;
     cursor: pointer;
 }
+
+/*arrows room*/
+
+.prev-arrow-room{
+    margin-right: 20px;
+    outline: 0 0 0 0;
+    margin-bottom: 10px;    
+}
+
+.prev-arrow-room:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.next-arrow-room{
+    margin-left: 20px;
+    outline: 0 0 0 0;
+    margin-bottom: 10px;
+}
+
+.next-arrow-room:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    cursor: pointer;
+}
+
 
 
 /*Responsividade*/
