@@ -124,8 +124,8 @@
     font-size: 3em;
 }
 
-/*arrows kitchen*/
 
+/*arrows kitchen*/
 .prev-arrow-kitchen{
     margin-right: 20px;
     outline: 0 0 0 0;
@@ -150,8 +150,8 @@
     cursor: pointer;
 }
 
-/*arrows room*/
 
+/*arrows room*/
 .prev-arrow-room{
     margin-right: 20px;
     outline: 0 0 0 0;
@@ -171,6 +171,32 @@
 }
 
 .next-arrow-room:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    cursor: pointer;
+}
+
+
+/*arrows bedroom*/
+.prev-arrow-bedroom{
+    margin-right: 20px;
+    outline: 0 0 0 0;
+    margin-bottom: 10px;    
+}
+
+.prev-arrow-bedroom:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.next-arrow-bedroom{
+    margin-left: 20px;
+    outline: 0 0 0 0;
+    margin-bottom: 10px;
+}
+
+.next-arrow-bedroom:hover{
     transform: scale(1.1);
     transition: .2s;
     cursor: pointer;

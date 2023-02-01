@@ -98,7 +98,7 @@ const productRoomData = [
   {'src': '../img/roomHomeAndDecoration/painelParaTvAte32Polegadas.jpg', 'name': 'Painel para TV', 'link': 'https://www.amazon.com.br/Painel-Sala-Para-Polegadas-Turim/dp/B0B2F2Q1WR?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=XD35M15O2VD8&keywords=sala+de+estar&qid=1675134816&sprefix=sala+de+estar%2Caps%2C156&sr=8-50&ufe=app_do%3Aamzn1.fos.6121c6c4-c969-43ae-92f7-cc248fc6181d&linkCode=ll1&tag=thasyo0a-20&linkId=8431eb9ff038c20cf562e2903997ae61&language=pt_BR&ref_=as_li_ss_tl'},
   {'src': '../img/roomHomeAndDecoration/aparadorBuffet3Portas.jpg', 'name': 'Aparador Buffet 3 Portas', 'link': 'https://www.amazon.com.br/Aparador-Buffet-Portas-M%C3%B3veis-Germai/dp/B099R467SW?crid=2NGHROHNR3B5H&keywords=moveis+sala+de+estar&qid=1675134968&sprefix=sala+de+estar%2Caps%2C350&sr=8-8&ufe=app_do%3Aamzn1.fos.fcd6d665-32ba-4479-9f21-b774e276a678&linkCode=ll1&tag=thasyo0a-20&linkId=d91975f3debf1132c1b97de6ed589c97&language=pt_BR&ref_=as_li_ss_tl'},
   {'src': '../img/roomHomeAndDecoration/bandejaEsteiraParaSofa.png', 'name': 'Bandeja Esteira para Sofá', 'link': 'https://shope.ee/3KsoLjVphQ'},
-  {'src': '../img/roomHomeAndDecoration/miniUmidificadorEggPortatil.png', 'name': 'Mini Umidificador Egg Potátil', 'link': 'https://shope.ee/1L7jyLfBIn'},
+  {'src': '../img/roomHomeAndDecoration/miniUmidificadorEggPortatil.png', 'name': 'Mini Umidificador Egg Portátil', 'link': 'https://shope.ee/1L7jyLfBIn'},
 ];
 
 const carouselRoom = document.querySelector("#carousel-room");
@@ -152,9 +152,82 @@ $( () => {
   });
 })
 
-
+//creating bedroom cards home and decoration.
 //carouselBedroom
 
+const productBedroomData = [
+  {'src': '../img/bedroomHomeAndDecoration/umidificadorDeChamas.png', 'name': 'Umidificador de Ar Personalizado', 'link': 'https://shope.ee/9zPjk5bzeu'},
+  {'src': '../img/bedroomHomeAndDecoration/tapeteFelpudoAntiDerrapante.png', 'name': 'Tapete Felpudo Antiderrapante', 'link': 'https://shope.ee/9emtLvJ5Fx'},
+  {'src': '../img/bedroomHomeAndDecoration/fitaLed.png', 'name': 'Fita Led', 'link': 'https://shope.ee/8pDmMxpltR'},
+  {'src': '../img/bedroomHomeAndDecoration/quadroDecorativoGamer.png', 'name': 'Quadro Decorativo Gamer', 'link': 'https://shope.ee/10Uv2l21js'},
+  {'src': '../img/bedroomHomeAndDecoration/BonecosVingadores.png', 'name': 'Colecionáveis dos Vingadores', 'link': 'https://shope.ee/5ztb05W93K'},
+  {'src': '../img/bedroomHomeAndDecoration/sapateira.png', 'name': 'Sapateira', 'link': 'https://shope.ee/2VJKwBSIyW'},
+  {'src': '../img/bedroomHomeAndDecoration/capaImpermeavelDeColchao.png', 'name': 'Capa Impermeável de Colchão', 'link': 'https://shope.ee/2fd92INMJd'},
+  {'src': '../img/bedroomHomeAndDecoration/mesaDeCabeceira.jpg', 'name': 'Mesa de Cabeceira', 'link': 'https://www.amazon.com.br/Cabeceira-Quarto-Gavetas-Estilo-Branco/dp/B0B48X11P2?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3E3ON2H0AXENR&keywords=quarto&qid=1675215455&sprefix=quarto%2Caps%2C225&sr=8-7&ufe=app_do%3Aamzn1.fos.6121c6c4-c969-43ae-92f7-cc248fc6181d&th=1&linkCode=ll1&tag=thasyo0a-20&linkId=3a554973dc29d5a5ef4aa608d253ebbe&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/bedroomHomeAndDecoration/espelho.jpg', 'name': 'Espelho com Moldura Decorativa', 'link': 'https://www.amazon.com.br/Espelho-Moldura-Decorativa-Madeira-Rustica/dp/B09WZC6ZSR?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3E3ON2H0AXENR&keywords=quarto&qid=1675215642&sprefix=quarto%2Caps%2C225&sr=8-9&ufe=app_do%3Aamzn1.fos.6121c6c4-c969-43ae-92f7-cc248fc6181d&th=1&linkCode=ll1&tag=thasyo0a-20&linkId=d580bd0333b60a969cfdfa6552064ab3&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/bedroomHomeAndDecoration/cabeceiraPainelSuspensa.jpg', 'name': 'Cabeceira com Painel Suspenso', 'link': 'https://www.amazon.com.br/Cabeceira-Painel-Suspensa-Estofada-Camur%C3%A7a/dp/B09XQP58S1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3E3ON2H0AXENR&keywords=quarto&qid=1675215642&sprefix=quarto%2Caps%2C225&sr=8-18&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&th=1&linkCode=ll1&tag=thasyo0a-20&linkId=abb404952276f8f1fa01e9c6f093e168&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/bedroomHomeAndDecoration/luminariaLuaCheia.jpg', 'name': 'Luminária Lua Cheia', 'link': 'https://www.amazon.com.br/Luminaria-Touch-Cheia-Abajur-Decoracao/dp/B07NDXS9L3?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3E3ON2H0AXENR&keywords=quarto&qid=1675215642&sprefix=quarto%2Caps%2C225&sr=8-26&linkCode=ll1&tag=thasyo0a-20&linkId=07f4310afabf459e99770cfcefa39e99&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/bedroomHomeAndDecoration/luminariaDeMesaArticulavel.jpg', 'name': 'Luminária Pixar Articulável', 'link': 'https://www.amazon.com.br/Lumin%C3%A1ria-Articulavel-Pixar-Garra-Quarto/dp/B084Q59N8W?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3E3ON2H0AXENR&keywords=quarto&qid=1675215642&sprefix=quarto%2Caps%2C225&sr=8-54&linkCode=ll1&tag=thasyo0a-20&linkId=2024b341fde7c4f384dd727691ff0950&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/bedroomHomeAndDecoration/03NinchosDeParede.jpg', 'name': '03 Ninchos de Parede', 'link': 'https://www.amazon.com.br/Nichos-Livros-Parede-Quarto-Quadrado/dp/B0BMW9YW52?content-id=amzn1.sym.2ab705c2-195f-4539-83c0-86683b4952d3%3Aamzn1.sym.2ab705c2-195f-4539-83c0-86683b4952d3&keywords=quarto+decora%C3%A7%C3%A3o&pd_rd_r=fee6ca5f-2db1-48ec-9eb6-78bc9a366b4a&pd_rd_w=68B5N&pd_rd_wg=0wwmd&pf_rd_p=2ab705c2-195f-4539-83c0-86683b4952d3&pf_rd_r=QZEFTXQFN35EQYQXE0EV&qid=1675216165&sr=8-10&linkCode=ll1&tag=thasyo0a-20&linkId=757e82fbfbc0b18ec3b327e13fdec4e0&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/bedroomHomeAndDecoration/escrivaninhaHomeOffice.jpg', 'name': 'Escrivaninha Home Office', 'link': 'https://www.amazon.com.br/Escrivaninha-Mesa-Computador-Office-Madesa/dp/B09GYN68CN?keywords=escrivaninha&qid=1675216360&sprefix=escrivainha%2Caps%2C220&sr=8-1-spons&ufe=app_do%3Aamzn1.fos.db68964d-7c0e-4bb2-a95c-e5cb9e32eb12&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzQU5ZQUlGNFVNVVVDJmVuY3J5cHRlZElkPUEwMjE5OTY3V1NCWVEwMzg2STgmZW5jcnlwdGVkQWRJZD1BMDE5NDU1NUNGUTJWUlJBWDkxVCZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU&th=1&linkCode=ll1&tag=thasyo0a-20&linkId=9c0fec9efc0c32c051a73bd53e11a285&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/bedroomHomeAndDecoration/escrivaninhaGamer.jpg', 'name': 'Escrivaninha Gamer', 'link': 'https://www.amazon.com.br/Mesa-Computador-Gamer-Escrivaninha-Madesa/dp/B09GYPZQK6?keywords=escrivaninha&qid=1675216440&sprefix=escrivainha%2Caps%2C220&sr=8-24-spons&ufe=app_do%3Aamzn1.fos.db68964d-7c0e-4bb2-a95c-e5cb9e32eb12&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzUjVGQlE4VlBSSVE5JmVuY3J5cHRlZElkPUEwMDgzMzkwMkRGRDMyVVJPSk85NyZlbmNyeXB0ZWRBZElkPUEwMTk0NDU1VE9PVDNFRjM2Q1U4JndpZGdldE5hbWU9c3BfbXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ&th=1&linkCode=ll1&tag=thasyo0a-20&linkId=701061808206d9a14bd09b91025436fa&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/bedroomHomeAndDecoration/escrivaninhaTrevallaKuadra.jpg', 'name': 'Escrivaninha Trella Kuadra', 'link': 'https://www.amazon.com.br/Escrit%C3%B3rio-Diretor-Estilo-Industrial-Kuadra/dp/B089Y3S71L?keywords=escrivaninha&qid=1675216440&sprefix=escrivainha%2Caps%2C220&sr=8-6&ufe=app_do%3Aamzn1.fos.db68964d-7c0e-4bb2-a95c-e5cb9e32eb12&th=1&linkCode=ll1&tag=thasyo0a-20&linkId=0373cbac8f422da204298941ce355294&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/bedroomHomeAndDecoration/camaBox.jpg', 'name': 'Cama Box Casal', 'link': 'https://www.amazon.com.br/Casal-Conjugado-Granada-Umaflex-Branco/dp/B0B61PX81D?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3SQQY3E2VACFS&keywords=cama&qid=1675216721&sprefix=cama%2Caps%2C289&sr=8-5&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147&linkCode=ll1&tag=thasyo0a-20&linkId=e23e52a640cb9d34e44d119c33c4b281&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/bedroomHomeAndDecoration/camaSolteiroCom02Gavetas.jpg', 'name': 'Cama Box Solteiro', 'link': 'https://www.amazon.com.br/Conjunto-Solteiro-Auxiliar-Siena-M%C3%B3veis/dp/B07RYB8TLC?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3SQQY3E2VACFS&keywords=cama&qid=1675216841&sprefix=cama%2Caps%2C289&sr=8-12&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147&linkCode=ll1&tag=thasyo0a-20&linkId=807f60e7e087a9b3c67cc8583b5fe390&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/bedroomHomeAndDecoration/guardaRoupaCasalEspelhado.jpg', 'name': 'Guarda Roupa de Casal Espelhado', 'link': 'https://www.amazon.com.br/Guarda-Espelhado-Espelho-Gavetas-Yescasa/dp/B09B9D1JM9?keywords=guarda+roupa&qid=1675216952&sprefix=guarda+%2Caps%2C189&sr=8-6&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147&linkCode=ll1&tag=thasyo0a-20&linkId=436199d3a592cba2446ac937ad87b1b6&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/bedroomHomeAndDecoration/guardaRoupaSolteiro.jpg', 'name': 'Guarda Roupa de Solteiro Espelhado', 'link': 'https://www.amazon.com.br/Guarda-Solteiro-Gavetas-Espelho-Yescasa/dp/B09SJPG7TL?keywords=guarda+roupa&qid=1675217010&sprefix=guarda+%2Caps%2C189&sr=8-10&ufe=app_do%3Aamzn1.fos.25548f35-0de7-44b3-b28e-0f56f3f96147&linkCode=ll1&tag=thasyo0a-20&linkId=c7ddcd42684b54598b98c9205501602a&language=pt_BR&ref_=as_li_ss_tl'},
+];
+
+const carouselBedroom = document.querySelector("#carousel-bedroom");
+
+const loadCardProductBedroom = (productBedroomData, carouselBedroom) => {
+
+  productBedroomData.forEach((cardproduct) => {
+    
+    carouselBedroom.innerHTML += `     
+      <div class="card-product">
+          <div class="img-product">
+              <img src="${cardproduct.src}" class="image">
+          </div>
+          <div class="content-product">
+              <h3 class="name-product">${cardproduct.name}</h3>
+              <a href="${cardproduct.link}" target="_blank">Detalhes do Produto</a>
+          </div>
+      </div>
+    `;
+    
+  })  
+
+};
+
+loadCardProductBedroom(productBedroomData, carouselBedroom);
+
+$( () => {
+  $("#carousel-bedroom").slick({
+      infinite: true,
+      slidesToShow: 5,
+      speed: 500,
+      slidesToScroll: 1,
+      centerMode: true,
+      prevArrow: $(".prev-arrow-bedroom"),
+      nextArrow: $(".next-arrow-bedroom"),
+      responsive: [
+          {
+            breakpoint: 1025,
+            settings: {
+              slidesToShow: 3,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              variableWidth: true,
+            }
+          }
+        ]
+  });
+})
 
 
 //carouselTerrace
