@@ -230,4 +230,78 @@ $( () => {
 })
 
 
-//carouselTerrace
+//creating bathroom cards home and decoration.
+//carouselBathroom.
+const productBathroomData = [
+  {'src': '../img/bathroomHomeAndDecoration/cestoDeNylon.png', 'name': 'Cesto de Nylon', 'link': 'https://shope.ee/8euVgCZEyP'},
+  {'src': '../img/bathroomHomeAndDecoration/nicho03pecas.png', 'name': 'Nicho com 03 peças', 'link': 'https://shope.ee/3KszKxO9PU'},
+  {'src': '../img/bathroomHomeAndDecoration/duchaAdvancedMultitemperatura.png', 'name': 'Ducha Advanced Multitemperatura', 'link': 'https://shope.ee/408g8K4MjY'},
+  {'src': '../img/bathroomHomeAndDecoration/lorenShowerUltraChuveiro.png', 'name': 'Lower Shower Ultra Chuveiro', 'link': 'https://shope.ee/3KszLBZkbR'},
+  {'src': '../img/bathroomHomeAndDecoration/suporteBanheiro.png', 'name': 'Suporte para Banheiro', 'link': 'https://shope.ee/3fVpjyGlpA'},
+  {'src': '../img/bathroomHomeAndDecoration/KitLixeiraEscovaSanitario.jpg', 'name': 'Kit Lixeira e Escova de Sanitário', 'link': 'https://www.amazon.com.br/Lixeira-Pedal-Escova-Sanit%C3%A1rio-Mor/dp/B0778RJ8F7?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1AD7V1L6FU8O4&keywords=banheiro&qid=1675730807&sprefix=banheiro%2Caps%2C199&sr=8-5&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&th=1&linkCode=ll1&tag=thasyo0a-20&linkId=553cec1224ca35d1095e56d86a4da1ba&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/bathroomHomeAndDecoration/kitAcessoriosParaBanheiro.jpg', 'name': 'Kit Acessórios para Banheiro', 'link': 'https://www.amazon.com.br/Acess%C3%B3rios-Banheiro-Preto-Fosco-Pe%C3%A7as/dp/B0BBY3KJVC?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1AD7V1L6FU8O4&keywords=banheiro&qid=1675731025&sprefix=banheiro%2Caps%2C199&sr=8-6&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=thasyo0a-20&linkId=39d115d3a35165ec47cffba073eadb32&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/bathroomHomeAndDecoration/espelhoGenovaBranco.jpg', 'name': 'Espelho Gênova Branco Ripado', 'link': 'https://www.amazon.com.br/Bechara-Espelheira-G%C3%AAnova-Branco-Ripado/dp/B085JPJ7LX?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1AD7V1L6FU8O4&keywords=banheiro&qid=1675731025&sprefix=banheiro%2Caps%2C199&sr=8-8&ufe=app_do%3Aamzn1.fos.6d798eae-cadf-45de-946a-f477d47705b9&linkCode=ll1&tag=thasyo0a-20&linkId=e9e4865e2c03c66d29c5c9c14e5dc832&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/bathroomHomeAndDecoration/toalheiroDeBox.jpg', 'name': 'Toalheiro de Box', 'link': 'https://www.amazon.com.br/Suporte-Porta-Toalha-Toalheiro-Cromado/dp/B076NW6SRC?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1AD7V1L6FU8O4&keywords=banheiro&qid=1675731025&sprefix=banheiro%2Caps%2C199&sr=8-10&linkCode=ll1&tag=thasyo0a-20&linkId=dba4a8a949a7c31f0e9aa630c00d4311&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/bathroomHomeAndDecoration/portaShampoo.jpg', 'name': 'Porta Shampoo', 'link': 'https://www.amazon.com.br/Porta-Shampoo-Branco-Encaixar-Stolf/dp/B093QC2RDF?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1AD7V1L6FU8O4&keywords=banheiro&qid=1675731025&sprefix=banheiro%2Caps%2C199&sr=8-31&th=1&linkCode=ll1&tag=thasyo0a-20&linkId=2c72541af972a8e1f8e353108b441f52&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/bathroomHomeAndDecoration/suportePapelHigienico.jpg', 'name': 'Suporte Triplo para Papel Higiênico', 'link': 'https://www.amazon.com.br/Suporte-Triplo-Higi%C3%AAnico-Acoplada-Stolf/dp/B09THL2K3B?content-id=amzn1.sym.2ab705c2-195f-4539-83c0-86683b4952d3%3Aamzn1.sym.2ab705c2-195f-4539-83c0-86683b4952d3&keywords=banheiro+acess%C3%B3rios&pd_rd_r=ad177286-1743-40a9-aabb-c218e52bb675&pd_rd_w=9TH6k&pd_rd_wg=ctWwa&pf_rd_p=2ab705c2-195f-4539-83c0-86683b4952d3&pf_rd_r=2ZGKAR3YFNKFDKJBAH2A&qid=1675731563&sr=8-39&linkCode=ll1&tag=thasyo0a-20&linkId=8a226fe83ab8cd3914d784a52b549c96&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/bathroomHomeAndDecoration/aplicadorPastaDeDente.png ', 'name': 'Aplicador de Pasta de Dente', 'link': 'https://shope.ee/AK2jhUlwie'},
+  {'src': '../img/bathroomHomeAndDecoration/assentoSanitarioAlmofadado.png', 'name': 'Assento de Sanitário Almofadado', 'link': 'https://shope.ee/8Ub5WGP681'},
+  {'src': '../img/bathroomHomeAndDecoration/mopGiratorioBaldeEsfregao.png', 'name': 'Mop Giratório com Balde e Esfregão', 'link': 'https://shope.ee/4AS6MTbMDR'},
+  {'src': '../img/bathroomHomeAndDecoration/suporteOrganizadorParaBanheiro.png', 'name': 'Suporte Organizador para Banheiro', 'link': 'https://shope.ee/6ADAkDS7yi'},
+  {'src': '../img/bathroomHomeAndDecoration/tapeteDeBanheiro.png', 'name': 'Tapete de Banheiro', 'link': 'https://shope.ee/cXOyvqGO'},
+  {'src': '../img/bathroomHomeAndDecoration/toalhaDeBanho.png', 'name': 'Toalha de Banho', 'link': 'https://shope.ee/6zmHjwSQTo'},
+  {'src': '../img/bathroomHomeAndDecoration/gabineteDeBanheiroPequin.jpg', 'name': 'Gabinete de Banheiro Pequin', 'link': 'https://www.amazon.com.br/Gabinete-1-PT-Pequin-Branco/dp/B07DDP73G1?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=63PMYRXM9UYJ&keywords=banheiro+moveis&qid=1675732335&sprefix=banheiro+moveis%2Caps%2C245&sr=8-6&ufe=app_do%3Aamzn1.fos.6a09f7ec-d911-4889-ad70-de8dd83c8a74&linkCode=ll1&tag=thasyo0a-20&linkId=76776ac0ef916e8ebd0d22007f99be34&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/bathroomHomeAndDecoration/armarioParaBanheiro.jpg', 'name': 'Armário para Banheiro', 'link': 'https://www.amazon.com.br/Arm%C3%A1rio-Banheiro-Espelheira-Portas-Branco/dp/B0BMW5GBVY?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=63PMYRXM9UYJ&keywords=banheiro+moveis&qid=1675732335&sprefix=banheiro+moveis%2Caps%2C245&sr=8-10&ufe=app_do%3Aamzn1.fos.db68964d-7c0e-4bb2-a95c-e5cb9e32eb12&linkCode=ll1&tag=thasyo0a-20&linkId=b87dbb14133b89eb2a01c955faa6d8e2&language=pt_BR&ref_=as_li_ss_tl'},
+  {'src': '../img/bathroomHomeAndDecoration/gabineteSuspensoDeBanheiro.jpg', 'name': 'Gabinete Suspenso para Banheiro', 'link': 'https://www.amazon.com.br/Gabinete-Suspenso-Branco-Marmorizado-Lilies/dp/B09WWRB9T6?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=63PMYRXM9UYJ&keywords=banheiro+moveis&qid=1675732335&sprefix=banheiro+moveis%2Caps%2C245&sr=8-12&ufe=app_do%3Aamzn1.fos.fcd6d665-32ba-4479-9f21-b774e276a678&linkCode=ll1&tag=thasyo0a-20&linkId=bf8020ddd14f1628f316d9fe329021f7&language=pt_BR&ref_=as_li_ss_tl'},
+];
+
+const carouselBathroom = document.querySelector("#carousel-bathroom");
+
+const loadCardProductBathroom = (productBathroomData, carouselBathroom) => {
+
+  productBathroomData.forEach((cardproduct) => {
+    
+    carouselBathroom.innerHTML += `     
+      <div class="card-product">
+          <div class="img-product">
+              <img src="${cardproduct.src}" class="image">
+          </div>
+          <div class="content-product">
+              <h3 class="name-product">${cardproduct.name}</h3>
+              <a href="${cardproduct.link}" target="_blank">Detalhes do Produto</a>
+          </div>
+      </div>
+    `;
+    
+  })  
+
+};
+
+loadCardProductBathroom(productBathroomData, carouselBathroom);
+
+$( () => {
+  $("#carousel-bathroom").slick({
+      infinite: true,
+      slidesToShow: 5,
+      speed: 500,
+      slidesToScroll: 1,
+      centerMode: true,
+      prevArrow: $(".prev-arrow-bathroom"),
+      nextArrow: $(".next-arrow-bathroom"),
+      responsive: [
+          {
+            breakpoint: 1025,
+            settings: {
+              slidesToShow: 3,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              variableWidth: true,
+            }
+          }
+        ]
+  });
+})

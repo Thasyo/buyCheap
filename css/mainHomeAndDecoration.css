@@ -202,6 +202,31 @@
     cursor: pointer;
 }
 
+/*arrows bathroom*/
+.prev-arrow-bathroom{
+    margin-right: 20px;
+    outline: 0 0 0 0;
+    margin-bottom: 10px;    
+}
+
+.prev-arrow-bathroom:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.next-arrow-bathroom{
+    margin-left: 20px;
+    outline: 0 0 0 0;
+    margin-bottom: 10px;
+}
+
+.next-arrow-bathroom:hover{
+    transform: scale(1.1);
+    transition: .2s;
+    cursor: pointer;
+}
+
 
 
 /*Responsividade*/
