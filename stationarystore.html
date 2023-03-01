@@ -4,9 +4,145 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BuyCheap - Papelaria</title>
+    <link rel="shortcut icon" href="img/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/mainStationaryStore.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="js/menuResponsive.js" defer></script>
+    <script src="js/jquery-3.6.3.js" defer></script>
 </head>
 <body>
-    <h1>PÁGINA DE PAPELARIA</h1>
+    <header>
+        <div class="logo-tipo">
+            <a href="homePage.html"><img src="img/logo-tipo/buycheap01.png" alt="logo-tipo-buyCheap"></a>
+        </div>
+        <div class="nav-bar">
+            <a href="decoration.html" style="background-color: FF7337; color: fff; border-bottom: solid 3px fff;">Casa e Decoração</a>
+            <a href="stationarystore.html">Papelaria</a>
+            <a href="tech.html">Tecnologia</a>
+            <a href="toys.html">Infantil</a>
+            <a href="accessories.html">Acessórios</a>
+            <a href="clothes.html">Roupas</a>
+            <a href="books.html">Livros</a>
+        </div>
+        <div class="menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="general-container">
+            <div class="category">
+                <h1><strong>Papelaria</strong></h1>
+            </div>
+            <div class="container-carousel">
+                <div class="title-subcategory">
+                    <h2>Cadernos</h2>
+                </div>
+                <div id="carousel-notebook" class="carousel">
+                    <!-- Cards de cadernos via js -->
+                </div>
+
+                <div class="arrows">
+                    <div class="prev-arrow-notebook">&laquo;</div>
+                    <div class="next-arrow-notebook">&raquo;</div>
+                </div>
+            </div>
+
+            <!-- school supplies Carousel -->
+
+            <div class="container-carousel">
+                <div class="title-subcategory">
+                    <h2>Materiais Escolares</h2>
+                </div>
+                <div id="carousel-schoolsupplies" class="carousel">
+                    <!-- Cards da canetas e lápis via js -->
+                </div>
+
+                <div class="arrows">
+                    <div class="prev-arrow-schoolsupplies">&laquo;</div>
+                    <div class="next-arrow-schoolsupplies">&raquo;</div>
+                </div>
+            </div>
+
+             <!-- bags carousel -->
+
+            <div class="container-carousel">
+                <div class="title-subcategory">
+                    <h2>Bolsas</h2>
+                </div>
+                <div id="carousel-bags" class="carousel">
+                    <!-- Cards do quarto via js -->
+                </div>
+
+                <div class="arrows">
+                    <div class="prev-arrow-bags">&laquo;</div>
+                    <div class="next-arrow-bags">&raquo;</div>
+                </div>
+            </div>
+
+             <!-- Papelaria (geral) carousel -->
+
+            <div class="container-carousel">
+                <div class="title-subcategory">
+                    <h2>Papelaria (geral)</h2>
+                </div>
+                <div id="carousel-stationeryingeneral" class="carousel">
+                    <!-- Cards do banheiro via js -->
+                </div>
+
+                <div class="arrows">
+                    <div class="prev-arrow-stationeryingeneral">&laquo;</div>
+                    <div class="next-arrow-stationeryingeneral">&raquo;</div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="nav-bar-footer">
+            <div class="title-footer-links">
+                <p>🧡 Navegue em nosso site 🧡</p>
+            </div>
+            <div class="links-footer">
+                <a href="homePage.html">Página Inicial</a>
+                <a href="decoration.html">Casa e Decoração</a>
+                <a href="stationarystore.html">Papelaria</a>
+                <a href="tech.html">Tecnologia</a>
+                <a href="toys.html">Infantil</a>
+                <a href="accessories.html">Acessórios</a>
+                <a href="clothes.html">Roupas</a>
+                <a href="books.html">Livros</a>
+            </div>
+        </div>
+
+        <div class="social-media">
+
+            <div class="title-footer-social-media">
+                <p>🧡 Redes Sociais 🧡</p>
+            </div>
+
+            <div class="links-social-media">
+
+                <a href="https://www.instagram.com/storebuycheap/" target="_blank"><img src="img/about/instagram.png" alt="instagram-da-loja-buy-cheap" ></a>
+                <a href="https://www.tiktok.com/@bcheap" target="_blank"><img src="img/about/tiktok.png" alt="tiktok-da-loja-buy-cheap"></a>
+            
+            </div>
+
+            <div class="copyright">
+                <img src="img/logo-tipo/buycheap01.png" alt="logo-tipo-buyCheap">
+            </div>
+
+        </div>
+
+    </footer>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer></script>
+    <script src="js/stationaryStoreCarousel.js" defer></script>
 </body>
 </html>
